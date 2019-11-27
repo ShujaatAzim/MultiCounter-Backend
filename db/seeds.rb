@@ -1,7 +1,8 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+counter1 = Counter.create({name: "Halo Reqs, Helms left", amount: 30, description: "Halo unlocks, common to rare only"})
+counter2 = Counter.create({name: "Halo Reqs, Armors left", amount: 24, description: "Halo unlocks, common to rare only"})
+counter3 = Counter.create({name: "Halo Reqs, Visors left", amount: 15, description: "Halo unlocks, common to rare only"})
+counter4 = Counter.create({name: "Halo Reqs, Stances left", amount: 5, description: "Halo unlocks, common to rare only"})
+counter5 = Counter.create({name: "Halo Reqs, Assassinations left", amount: 2, description: "Halo unlocks, common to rare only"})
+counter6 = Counter.create({name: "Halo Reqs, Weapon Skins left", amount: 19, description: "Halo unlocks, common to rare only"})
+counter7 = Counter.create({name: "Halo Reqs, Loadout Weapons left", amount: 22, description: "Halo unlocks, common to rare only"})
+counter8 = Counter.create({name: "Halo Reqs, Emblems left", amount: 53, description: "Halo unlocks, common to rare only, but might not all be unlocked from boxes"})
