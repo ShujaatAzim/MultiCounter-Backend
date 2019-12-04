@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class CategoriesControllerTest < ActionDispatch::IntegrationTest
+class CounterTagTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
