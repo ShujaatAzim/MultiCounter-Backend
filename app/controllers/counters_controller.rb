@@ -23,6 +23,7 @@ class CountersController < ApplicationController
   end
 
   def delete
+    something
   end
 
 end
