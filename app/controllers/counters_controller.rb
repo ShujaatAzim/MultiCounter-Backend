@@ -10,19 +10,21 @@ class CountersController < ApplicationController
     render json: CounterSerializer.new(@counter).to_serialized_json
   end
 
-  def new
-  end
-
   def create
-  end
-
-  def edit
+    @counter = Counter.create(name: params[:name], amount: params[:amount], description: params[:description])
+    params[:tags].each { |t| @counter.tags << Tag.find_by(name: t[:name]) }
+    render json: CounterSerializer.new(@counter).to_serialized_json
   end
 
   def update
+    @counter = Counter.find(params[:id])
+    @counter.update(name: params[:name], amount: params[:amount], description: params[:description])
+    @counter.save
   end
 
-  def delete
+  def destroy
+    @counter = Counter.find(params[:id])
+    @counter.destroy
   end
 
 end

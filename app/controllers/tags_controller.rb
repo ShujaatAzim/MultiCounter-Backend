@@ -10,13 +10,7 @@ class TagsController < ApplicationController
     render json: TagSerializer.new(@tag.includes(:counters)).to_serialized_json
   end
 
-  def new
-  end
-
   def create
-  end
-
-  def edit
   end
 
   def update
