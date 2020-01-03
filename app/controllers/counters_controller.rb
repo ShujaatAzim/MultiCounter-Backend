@@ -24,7 +24,7 @@ class CountersController < ApplicationController
 
   def destroy
     @counter = Counter.find(params[:id])
-    @counter.destroy
+    @counter.delete
   end
 
 end
