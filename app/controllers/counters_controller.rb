@@ -18,7 +18,7 @@ class CountersController < ApplicationController
 
   def update
     @counter = Counter.find(params[:id])
-    @counter.update(name: params[:name], amount: params[:amount], description: params[:description])
+    @counter.update(name: params[:name], amount: params[:amount], description: params[:description], tags: params[:tags])
     @counter.save
   end
 
