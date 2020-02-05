@@ -13,13 +13,13 @@ class TagsController < ApplicationController
   def create
     @tag = Tag.create(name: params[:name])
     render json: TagSerializer.new(@tag).to_serialized_json
-    # ask marcus about significance of rendering the freshly created instance as json
   end
 
   def update
     @tag = Tag.find(params[:id])
     @tag.update(name: params[:name])
     @tag.save
+    render json: TagSerializer.new(@tag).to_serialized_json
   end
 
   def destroy
